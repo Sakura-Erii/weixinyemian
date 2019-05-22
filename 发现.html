@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/iconfont.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap{
+            border: 1px solid black;
+        }
+        .top {
+            height: 35px;
+            background-color: 	#d3d3d3;
+            line-height: 35px;
+
+        }
+        .top .time{
+            font-size: 25px;
+            text-align: center;
+            margin-left: 285px;
+
+        }
+        .top .iconfont{
+            font-size: 25px;
+            float: left;
+            margin-left: 5px;
+        }
+        .a1{
+            width: 130px;
+            float: left;
+        }
+        .a2{
+            width: 130px;
+            float: right;
+            text-align: left;
+        }
+        .head{
+            height: 100px;
+            background-color: 	#d3d3d3;
+            font-size: 50px;
+            line-height: 100px;
+        }
+        #wrap .head .iconfont{
+            font-size: 50px;
+            float: right;
+            margin-right: 40px;
+        }
+        #wrap ul{
+
+            height: 1450px;
+
+            overflow: scroll;
+        }
+        #wrap ul li{
+            list-style: none;
+            height: 100px;
+            /*border-bottom: 1px solid black;*/
+
+        }
+        .bottom{
+            display: flex;
+            height: 150px;
+            border: 1px solid black;
+        }
+        #wrap .bottom div{
+            flex: 1;
+            background-color: 	#d3d3d3
+        }
+        .bottom .iconfont{
+            text-align: center;
+        }
+        .bottom .iconfont a p{
+            font-size: 70px;
+            line-height: 82px;
+
+        }
+        .bottom .iconfont span{
+            font-size: 40px;
+            line-height: 60px;
+        }
+        img{
+            width: 130px;
+            height: 130px;
+            margin: 10px;
+            border-radius:25px;
+        }
+       ul   li{
+           font-size: 40px;
+           border-bottom: #aaaaaa 1px solid;
+           line-height: 100px;
+       }
+        .img{
+            font-size: 60px;
+        }
+        .img1{
+            font-size: 40px;
+        }
+        .tianjia1   .tianjia{
+            color: white;
+            border-bottom: white    1px solid;
+            font-size: 50px;
+        }
+        #weilei:hover   #tianjiakuai{
+            display: block;
+        }
+        #tianjiakuai{
+            width: 415px;
+            background-color: black;
+            position: absolute;top: 135px;
+            left: 565px;
+            height: 500px;
+            display: none;
+        }
+        @keyframes test {
+            from{
+                width: 50px;
+            }
+            to{
+                width: 200px;
+            }
+        }
+        #dian{
+            animation: test 1s  infinite;/**执行动画*/
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <!--顶部-->
+    <div class="top">
+        <strong class="time">
+            <span   class="iconfont test">&#xeb07;</span>
+            <span   class="iconfont test">&#xeb07;</span>
+            <span   class="iconfont test">&#xe63d;</span>
+            <span   class="">下午3:50</span>
+        </strong>
+
+        <div class="a2">
+            <span   class="iconfont test1">80%&#xe638;</span>
+            <span   class="iconfont test1">&#xe627;</span>
+        </div>
+    </div>
+    <!--页面头-->
+    <div class="head">
+        <span style="margin-left: 30px">微信</span>
+        <span class="iconfont">&#xe783;</span>
+        <span class="iconfont"  id="weilei">&#xe620;
+        <div   id="tianjiakuai">
+    <ul     class="tianjia1">
+        <li    class="tianjia">
+            <span   class="iconfont">&#xe6d1;</span>
+            发起群聊</li>
+        <li    class="tianjia">
+            <span   class="iconfont">&#xe612;</span>
+            添加朋友</li>
+        <li    class="tianjia">
+            <span   class="iconfont">&#xe600;</span>
+            扫一扫</li>
+        <li    class="tianjia">
+            <span   class="iconfont">&#xe609;</span>
+            首付款</li>
+        <li    class="tianjia">
+            <span   class="iconfont">&#xe668;</span>
+            帮助与反馈</li>
+    </ul>
+</div>
+        </span>
+    </div>
+    <!--主体-->
+    <ul>
+        <a href="朋友圈.html"style="text-decoration: none;color: black">
+        <li>
+            <span class="iconfont   img">&#xe633;</span>&nbsp&nbsp&nbsp
+            朋友圈
+        </li>
+            <div    style="height: 27px;background-color: #aaaaaa;"></div>
+        </a>
+        <li>
+            <span class="iconfont   img">&#xe600;</span>&nbsp&nbsp&nbsp
+            扫一扫
+        </li>
+        <li>
+            <span class="iconfont   img">&#xe6f6;</span>&nbsp&nbsp&nbsp
+            摇一摇
+        </li>
+        <div    style="height: 27px;background-color: #aaaaaa;"></div>
+        <li>
+            <span class="iconfont   img">&#xe602;</span>&nbsp&nbsp&nbsp
+            看一看
+        </li>
+        <li>
+            <span class="iconfont   img">&#xe647;</span>&nbsp&nbsp&nbsp
+            搜一搜
+        </li>
+        <div    style="height: 27px;background-color: #aaaaaa;"></div>
+        <li>
+            <span class="iconfont   img">&#xe642;</span>&nbsp&nbsp&nbsp
+            附近的人
+        </li>
+        <li>
+            <span class="iconfont   img">&#xe63c;</span>&nbsp&nbsp&nbsp
+            漂流瓶
+        </li>
+        <div    style="height: 27px;background-color: #aaaaaa;"></div>
+        <li>
+            <span class="iconfont   img">&#xe609;</span>&nbsp&nbsp&nbsp
+            购物
+        </li>
+        <li>
+            <span class="iconfont   img">&#xe618;</span>&nbsp&nbsp&nbsp
+            游戏
+        </li>
+        <div    style="height: 27px;background-color: #aaaaaa;"></div>
+        <li>
+            <span class="iconfont   img1">&#xe601;</span>&nbsp&nbsp&nbsp
+            小程序
+        </li>
+    </ul>
+    <!--页面底部按钮-->
+    <div class="bottom">
+        <div class="iconfont">
+            <a href="微信.html" style="text-decoration: none">
+                <p>&#xe62b;</p>
+                <span>微信</span>
+            </a>
+        </div>
+        <div class="iconfont">
+            <a href="通讯录.html" style="text-decoration: none">
+                <p>&#xe63a;</p>
+                <span>通讯录</span>
+            </a>
+        </div>
+        <div class="iconfont">
+            <a href="发现.html" style="text-decoration: none">
+                <p>&#xe746;</p>
+                <span>发现</span>
+            </a>
+        </div>
+        <div class="iconfont">
+            <a href="我.html" style="text-decoration: none">
+                <p>&#xe758;</p>
+                <span>我</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div    style="height: 35px;width: 50px;background-color: lawngreen;position: absolute;bottom: 1705px;left: 550px;line-height: 35px;font-size: 20px"  id="dian">充电中</div>
+</body>
+</html>
